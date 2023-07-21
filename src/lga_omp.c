@@ -36,7 +36,6 @@ static void update(byte *grid_in, byte *grid_out, int grid_size,int num_threads)
                 else
                     grid_out[ind2d(i,j)] = get_next_cell(i, j, grid_in, grid_size);
             }
-        }
 }
 
 void simulate_omp(byte *grid_1, byte *grid_2, int grid_size, int num_threads) {
